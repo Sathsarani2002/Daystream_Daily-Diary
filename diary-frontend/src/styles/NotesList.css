@@ -1,0 +1,78 @@
+/* White box container */
+.white-box {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 40px 50px;
+  width: 85%;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.white-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.notes-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+  margin-bottom: 25px;
+  border-left: 6px solid #7aa2d6;
+  padding-left: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Scrollable container for notes */
+.notes-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-right: 8px;
+  scrollbar-width: thin;
+}
+
+/* Custom scrollbar */
+.notes-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notes-scroll::-webkit-scrollbar-thumb {
+  background-color: #7aa2d6;
+  border-radius: 10px;
+}
+
+.notes-scroll::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Floating Add Button */
+.add-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-color: #7aa2d6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #5f8fd4;
+  transform: scale(1.08);
+}
+
+.add-btn:active {
+  transform: scale(0.96);
+}
